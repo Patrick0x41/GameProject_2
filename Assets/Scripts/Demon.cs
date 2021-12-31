@@ -55,6 +55,7 @@ public class Demon : MonoBehaviour
         // Play death animation
         // Play death audio
         anim.SetTrigger("Death");
+        Destroy(gameObject);
         GetComponent<BoxCollider2D>().enabled = false;
         enemyHealthBar.slider.gameObject.SetActive(false);
     }
